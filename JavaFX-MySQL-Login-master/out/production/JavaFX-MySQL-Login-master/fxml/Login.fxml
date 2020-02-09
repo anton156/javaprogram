@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="854.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+    <children>
+        <AnchorPane prefHeight="503.0" prefWidth="382.0" style="-fx-background-color: #705a42;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="87.0" fitWidth="93.0" layoutX="148.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../src/images/adminpanellogo.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="105.0" layoutY="262.0" prefHeight="23.0" prefWidth="173.0" text="Dodavanje proizvoda" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="488.0" layoutY="100.0" AnchorPane.bottomAnchor="73.0" AnchorPane.topAnchor="100.0">
+            <children>
+                <TextField fx:id="txtUsername" layoutX="4.0" layoutY="73.0" prefHeight="34.0" prefWidth="275.0" promptText="email" />
+                <PasswordField fx:id="txtPassword" layoutX="7.0" layoutY="131.0" prefHeight="34.0" prefWidth="275.0" promptText="sifra" stylesheets="@../styling/fullpackstyling.css" />
+                <Button fx:id="btnSignin" layoutX="73.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="34.0" prefWidth="137.0" stylesheets="@../../../../src/styling/fullpackstyling.css" text="Prijavi se" textAlignment="CENTER" />
+                <Label fx:id="lblErrors" alignment="CENTER" layoutX="7.0" layoutY="107.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
+                    <font>
+                        <Font name="Segoe UI" size="10.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <ImageView fitHeight="48.0" fitWidth="51.0" layoutX="394.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../src/images/adminpanellogo.png" />
+            </image>
+            <effect>
+                <Glow />
+            </effect>
+        </ImageView>
+    </children>
+</AnchorPane>
